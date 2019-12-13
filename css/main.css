@@ -1,0 +1,371 @@
+body{
+
+background:#fff;
+font-family: arial;
+
+}
+#header{
+width:100%;	
+}
+#contner{
+margin : auto;
+width:100%;	
+}
+
+
+#contner li{
+list-style:none;
+}
+
+/* Menu nav_profil */
+#nav_profil{
+
+	float:right;
+	padding-right:15px;
+	margin-top:-10px;
+	font-weight : bold; /* on met le texte en gras */
+    font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+    font-size : 18px; /* hauteur du texte : 12 pixels */
+	
+}
+#nav_profil ul	{
+    padding : 0; /* pas de marge intérieure */
+    
+    list-style : none; /* on supprime le style par défaut de la liste */
+    line-height : 21px; /* on définit une hauteur pour chaque élément */
+    text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+#nav_profil a /* Contenu des listes */
+{
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+        padding : 0; /* aucune marge intérieure */
+         font-weight : bold;   
+        color : #fff; /* couleur du texte */
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+        width : 124.4px; /* largeur */
+		margin-left : 1px;
+		font-size:15px;
+}
+#nav_profil a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        color: #fff; /* On passe le texte en blanc... */
+        
+		font-weight : bold;
+		font-size:15px;
+		background:#007d32;
+}
+#nav_profil li a.current{
+	color: #fff; /* On passe le texte en blanc... */
+    font-size:18px;
+	text-decoration:none;
+	background:none;
+	
+}
+#nav_profil ul li ul{
+	background : #e63329;
+	border:1px solid #2d70b8;
+	border-radius: 4px 4px 4px 4px;
+	opacity: 0.9;
+}
+#nav_profil li ul 
+{ 
+        position: absolute; 
+        width: 124.4px; 
+        left: -999em; 
+}
+#nav_profil li:hover ul, #nav_profil li li:hover ul, #nav_profil li.sfhover ul, #nav_profil li li.sfhover ul 
+{
+	left:auto; 
+}
+
+/* Menu Nav */
+#nav{
+background:#007d32;
+width:100%;
+height:40px;
+
+}
+#nav ul 
+{
+     padding : 0; 
+     margin : 0; 
+     list-style : none; 
+     line-height : 40px; 
+     text-align : center; 
+	 }
+#nav li{
+float:left;
+border-right : 1px solid #ccc;
+
+}
+#nav a{
+text-decoration : none;
+color:#fff;
+display:block;
+width : 110px;
+height:40px;
+text-align:center;
+}
+
+#nav li a.current{
+	color:  #fff; 
+    background: #e63329; 
+	font-weight:bold;
+	}
+#nav a:hover 
+{
+        color: #fff; 
+        background:#e63329; 
+		border-bottom:1px solid #ccc;
+}
+/*------------------------------------------------*/
+#nav ul	li ul{
+	background : #007d32;
+	
+	}
+#nav li ul 
+{ 
+        position: absolute;
+        width: 110px; 
+        left: -999em; 
+}
+#nav li:hover ul, #nav li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul 
+{
+	left:auto; 
+}
+
+/*------------------------------------------------------*/
+
+#logo{
+width:100%;	
+background-image : url(../images/logo.png);
+background-repeat : no-repeat;
+height:90px;
+background-color:#f5f5f5;
+margin-top:10px;
+
+}
+table{
+border-collapse:collapse;
+width:auto;
+margin:auto;
+}
+table th,td {
+border:2px solid green;
+width:auto;
+
+padding:3px;
+}
+form input,select{
+background:#fff;
+border:1px solid #ccc;
+}
+table th{
+color:#fff;
+background:#eb3c00;
+width:auto;
+}
+
+
+#OkBtn {
+border : 1px solid #e63329;
+background : #007d32;
+text-align : center;
+color : #fff;
+font-size : 12px;
+font-weight : bold;
+padding : 5px;
+cursor : pointer;
+margin-left:40px;
+width:80px;
+margin-top:0px;
+}
+#OkBtn:hover {
+color : #fff;
+background : #e63329;
+border : 1px solid  #007d32;
+}
+
+#result ul li{
+
+	
+    list-style : none; 
+    line-height : 40px; 
+
+}
+#result label{
+	
+	color : #007d32;
+	font-weight : bold;
+	width : 150px;
+	display : bolck;
+	float : left;
+}
+#result select{
+width:220px;
+}
+#search li{
+
+	
+   list-style : none; 
+   line-height : 40px;
+   margin-bottom:-34px;	
+
+}
+#search label{
+	
+	color : #007d32;
+	font-weight : bold;
+	width : 150px;
+	display : bolck;
+	float : left;
+	margin-left:40px;
+
+}
+#search input{
+	
+	width:220px;
+}
+
+#connexion {
+	width:100%;
+	
+}
+#connexion form{
+width:402px;
+border:5px solid #007d32;
+border-radius:5px;
+margin:auto;
+}
+
+#connexion form h2{
+width:400px;
+background:#e63329;
+text-align:center;
+color:#fff;
+margin:1px 1px 0 1px;
+}
+
+#connexion li{
+	list-style : none;
+	margin-bottom:10px;	
+}
+
+#connexion label{
+	
+	color : #007d32;
+	font-weight : bold;
+	width : 150px;
+	display : bolck;
+	float : left;
+	
+
+}
+#connexion input{
+	
+	width:180px;
+}
+
+
+#connectBtn {
+border : 1px solid #e63329;
+background : #007d32;
+text-align : center;
+color : #fff;
+font-size : 15px;
+font-weight : bold;
+padding : 5px;
+cursor : pointer;
+margin-left:65px;
+width:50px;
+margin-top:20px;
+}
+#connectBtn:hover {
+color : #fff;
+background : #e63329;
+border : 1px solid  #007d32;
+}
+
+#autoconnect {
+
+margin-left:-80px;
+}
+#checkbox{
+width:0px; 
+border:1px solid transparent;
+}
+
+#recherche{
+margin-bottom:20px;
+}
+#recherche li{
+
+list-style:none;
+font-size:15px;
+font-weight:bold;
+margin-bottom:10px;
+}
+a {
+
+color:green;
+font-size:18px;
+text-decoration:none;
+}
+ a:hover {
+
+color:red;
+
+}
+
+
+#basic_container{
+
+display:none;
+}
+
+
+
+
+
+
+#change_pass {
+	width:100%;
+	
+}
+#change_pass form{
+width:402px;
+border:5px solid #007d32;
+border-radius:5px;
+margin:auto;
+padding-right:30px;
+}
+
+#change_pass form h2{
+width:430px;
+background:#e63329;
+text-align:center;
+color:#fff;
+margin:1px 1px 0 1px;
+}
+
+#change_pass li{
+	list-style : none;
+	margin-bottom:10px;	
+}
+
+#change_pass label{
+	
+	color : #007d32;
+	font-weight : bold;
+	width : 165px;
+	display : bolck;
+	float : left;
+	
+
+}
+#change_pass input{
+	
+	width:180px;
+	margin-left:0px;
+
+}

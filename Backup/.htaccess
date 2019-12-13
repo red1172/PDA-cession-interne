@@ -1,0 +1,5 @@
+
+AuthName "Partie administrateur"
+AuthUserFile "/root/var/www/html/web/cession/admin/.htpasswd"
+AuthType Basic
+Require valid-user

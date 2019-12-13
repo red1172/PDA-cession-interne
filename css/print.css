@@ -1,0 +1,13 @@
+﻿ #nav_profil, #nav, form
+{
+	display:none;
+}
+#logo{
+width:100%;	
+background-image : url(../images/logo.png);
+background-repeat : no-repeat;
+height:90px;
+background-color:#f5f5f5;
+margin-top:10px;
+
+}

@@ -1,0 +1,137 @@
+table.calendar {
+    position : relative;
+	font-family : Helvetica, Arial, sans-serif;
+	border : 1px solid #6487AE;
+	border-collapse : collapse;
+	empty-cells : show;
+	background-color : white;
+	-moz-user-select : none; /* Désactive la sélection de texte avec Mozilla - voir le code pour IE */
+}
+
+table.calendar input, table.calendar select, table.calendar td, table.calendar th, table.calendar caption {
+	font-size : 10px;
+	padding : 0;
+	margin : 0;
+}
+
+table.calendar select {
+    margin-top : 2px!important;
+}
+
+table.calendar caption {
+    line-height : 25px;
+    background-image : url('images/calendar_panel_bckg.gif');
+    background-repeat : repeat-x;
+    border-right : 1px solid #6487AE;
+    border-left : 1px solid #6487AE;
+    margin-left:-1px; /* Margin fix pour FireFox*/
+}
+
+/* Opera 6+ specific value */
+@media screen and (min-width: 0px) {
+table.calendar caption {margin-left:0}
+}
+
+table.calendar caption div {
+    position : relative;
+    margin : auto;
+    padding-left : 4px;
+    padding-right : 4px;
+}
+
+table.calendar caption div a {
+    height : 25px;
+    width : 7px;
+    background-repeat : no-repeat;
+    background-position : center;
+}
+
+table.calendar caption div a.monthUp {
+    float : right;
+    background-image : url('images/calendar_monthUp.gif');
+}
+
+table.calendar caption div a.monthDn {
+    float : left;
+    background-image : url('images/calendar_monthDn.gif');
+}
+
+table.calendar caption div select.monthSelect {
+    margin-right : 8px;
+}
+
+table.calendar td, table.calendar th {
+    text-align : center;
+    width : 22px;
+    border : solid #6487AE 1px;
+}
+
+table.calendar th {
+    color : #15428B;
+}
+
+table.calendar thead th {
+    height : 18px;
+    background-image : url('images/calendar_thead_bckg.gif');
+    background-repeat : repeat-x;
+}
+
+table.calendar thead th.wkhead {
+    background-image : none;
+}
+
+table.calendar tbody td {
+    height : 20px;
+	cursor : pointer;
+	border : 1px solid #6487AE;
+	vertical-align : middle;
+}
+
+table.calendar tbody th {
+    background-image: url('images/calendar_tbody_th_bckg.gif');
+    background-repeat: repeat-y;
+}
+
+table.calendar tbody td.wkday, table.calendar tbody td.wkend {
+	background-color: #C4D3EA;
+}
+
+table.calendar tbody td.curdate {
+    color : #FF0000;
+}
+
+table.calendar tbody td.cell_selected {
+	background-color: #FFF799;
+	color: black;
+}
+
+table.calendar tbody td.notmnth {
+	background-color: #FFFFFF;
+	color: #999999;
+}
+
+table.calendar tbody td.notallowed {
+    font-style : italic;
+	color : #999999;
+	background-color: white;
+}
+
+table.calendar tbody td.hover {
+	background-color: #FFCC66;
+}
+
+table.calendar tfoot td {
+    background-image : url('images/calendar_panel_bckg.gif');
+    background-repeat : repeat-x;
+}
+
+table.calendar tfoot a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #336699;
+    padding-right : 5px;
+}
+
+table.calendar tfoot a:hover {
+    text-decoration : underline;
+}
